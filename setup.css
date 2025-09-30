@@ -1,0 +1,46 @@
+ body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #b993d6, #8ca6db);
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      background: white;
+      padding: 36px 40px;
+      border-radius: 16px;
+      width: 360px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+    h2 { color:#6a5acd; margin-bottom:16px; }
+    input[type="text"], select {
+      width: 92%;
+      padding: 10px 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      outline: none;
+    }
+    input[type="text"]:focus, select:focus { box-shadow: 0 0 8px #6a5acd; border-color:#6a5acd; }
+    label { display:block; text-align:left; margin-left:4%; margin-top:12px; font-weight:600; color:#444; }
+    .emoji-container { display:flex; justify-content:space-between; margin:12px 4%; font-size:26px; }
+    .emoji-container span { padding:6px; border-radius:8px; cursor:pointer; transition:0.18s; }
+    .emoji-container span.selected { background:#6a5acd; color:white; transform:scale(1.12); box-shadow:0 6px 18px rgba(106,90,205,0.25); }
+    .slider-value { color:#6a5acd; font-weight:700; margin-top:4px; }
+    button.start-btn {
+      margin-top:14px;
+      background:#6a5acd;
+      color:white;
+      border:none;
+      padding:12px 22px;
+      border-radius:12px;
+      cursor:pointer;
+      font-weight:700;
+      font-size:16px;
+    }
+    button.start-btn:hover { background:#5848b6; transform:scale(1.03); box-shadow:0 8px 18px rgba(88,72,182,0.14); }
+    input[type="range"] { width:92%; }
