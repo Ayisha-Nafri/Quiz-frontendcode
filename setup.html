@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Setup</title>
+ <link rel="stylesheet" href="setup.css">
+</head>
+<body id="setup-page">
+  <div class="form-container">
+    <h2>Quiz Setup</h2>
+
+    <input id="username" type="text" placeholder="Enter your name" />
+
+    <label for="quizType">Select Quiz Type</label>
+    <select id="quizType">
+      <!-- value is the OpenTDB category id -->
+      <option value="" disabled selected>Choose category</option>
+      <option value="9">General Knowledge</option>
+      <option value="17">Science & Nature</option>
+      <option value="18">Computers</option>
+      <option value="19">Mathematics</option>
+      <option value="23">History</option>
+    </select>
+
+    <label for="difficulty">Difficulty (1 = easiest → 10 = hardest)</label>
+    <input id="difficulty" type="range" min="1" max="10" value="5" />
+    <div class="slider-value" id="diffValue">5</div>
+
+    <label for="numQuestions">Number of Questions</label>
+    <select id="numQuestions">
+      <option value="5">5 Questions</option>
+      <option value="10" selected>10 Questions</option>
+      <option value="15">15 Questions</option>
+      <option value="20">20 Questions</option>
+    </select>
+
+    <label>Select Emoji</label>
+    <div class="emoji-container">
+      <span onclick="selectEmoji(this)">🤠</span>
+      <span onclick="selectEmoji(this)">🧑</span>
+      <span onclick="selectEmoji(this)">👧</span>
+      <span onclick="selectEmoji(this)">😎</span>
+      <span onclick="selectEmoji(this)">👻</span>
+    </div>
+
+    <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+  <script src="setup.js"></script>
+</body>
+</html>
