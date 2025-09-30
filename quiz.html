@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body id="quiz-page">
+     <!-- Loading UI -->
+  <div id="loadingBox">
+    <h2 style="color:#6a5acd;margin:0">Loading questions...</h2>
+    <div class="spinner"></div>
+    <div style="color:#666">If this takes longer than a few seconds, check your connection or try again.</div>
+  </div>
+
+  <!-- Quiz UI -->
+  <div class="quiz-container" id="quizContainer" style="display:none;">
+    <div class="user-info" id="userInfo"></div>
+
+    <div class="top-bar">
+      <div class="question-number" id="questionNumber"></div>
+      <div class="timer" id="timer">Time Left: 00:00</div>
+    </div>
+
+    <div class="question-text" id="questionText"></div>
+    <div class="options" id="optionsContainer"></div>
+
+    <div class="nav">
+      <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+      <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="progress" id="progressText"></div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
